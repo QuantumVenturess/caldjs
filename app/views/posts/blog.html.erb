@@ -1,0 +1,6 @@
+<div class="blogPosts">
+    <%= render @posts %>
+    <%= will_paginate @posts, separator: '' %>
+    <div class="clear"></div>
+</div>
+<%= render 'shared/top_button' %>

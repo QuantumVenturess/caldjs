@@ -1,0 +1,17 @@
+<div class="pendingComment">
+    <div class="commentCreated">
+        <%= comment.created_at.strftime('%b %d, %y - %I:%M %p') %>
+    </div>
+    <div class="pendingCommentName">
+        <p><%= comment.email %></p>
+    </div>
+    <p><%= comment.content %></p>
+    <div class="commentApprove">
+        <% if comment.read? %>
+            <%= link_to 'Unread', unread_comment_path(comment) %>
+        <% else %>
+            <%= link_to 'Read', read_comment_path(comment) %>
+        <% end %>
+        | <%= link_to 'Delete', comment, method: :delete, confirm: 'Delete?' %>
+    </div>
+</div>

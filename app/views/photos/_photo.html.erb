@@ -1,0 +1,15 @@
+<div class="photo" id="photo_<%= photo.id %>" style="height: <%= photo.height_max %>px;">
+    <%= link_to(photo.file.url, title: photo.name) do %>
+        <%= image_tag '/assets/photo_default.png', 'data-original' => photo.file.url, style: "max-height: #{photo.height_max}px;" %>
+    <% end %>
+</div>
+<script>
+$('#photo_<%= photo.id %> img').lazyload({
+    event: 'load',
+    effect: 'fadeIn',
+    failure_limit: 50
+})
+$('#photo_<%= photo.id %> a').lightBox({
+    txtImage: $(this).attr('title')
+});
+</script>

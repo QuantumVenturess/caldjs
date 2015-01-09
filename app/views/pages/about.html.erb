@@ -1,0 +1,27 @@
+<div class="about contentPad">
+    <section>
+        <h1>Our Philosophy</h1>
+        <%= philosophy_a %>
+        <ol>
+            <li>Get our client's musical vision</li>
+            <li>Sort out ALL the little details of the big day</li>
+        </ol>
+        <%= philosophy_b %>
+    </section>
+    <section>
+        <h1>Henry Wang</h1>
+        <%= image_tag '/assets/henry_wang.jpg' %>
+        <div>
+            <%= henry_wang %>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <h1>Photo Gallery</h1>
+    <div class="grid">
+        <%= render @photos %>
+    </div>
+    <div class="photosPagination">
+        <%= render 'endless_pagination' %>
+    </div>
+</div>
+<%= render 'shared/top_button' %>

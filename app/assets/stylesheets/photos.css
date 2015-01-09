@@ -1,0 +1,32 @@
+/* About grid */
+.grid {
+    display: none;
+    margin: 0 auto;
+}
+
+.photo {
+    position: absolute;
+    margin: 0 0 20px 0;
+    text-align: center;
+    width: 300px;
+}
+
+.photo img {
+    vertical-align: bottom;
+    max-width: 300px;
+}
+
+.photosPagination {
+    display: none;
+}
+
+/* Index */
+.photos ol {
+    font-size: 14px;
+    margin: 0 0 40px 0;
+    padding: 0 0 0 20px;
+}
+
+.photos li {
+    margin: 0 0 5px 0;
+}

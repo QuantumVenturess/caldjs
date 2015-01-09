@@ -1,0 +1,9 @@
+<div class="comments">
+    <div class="approved">
+        <%= render partial: 'comment', collection: @read %>
+    </div>
+    <div class="pending">
+        <%= render partial: 'comment', collection: @unread %>
+    </div>
+    <div class="clear"></div>
+</div>

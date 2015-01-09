@@ -1,0 +1,172 @@
+/* Comments index */
+.approved {
+    float: left;
+}
+
+.pending {
+    float: right;
+}
+
+.approved, .pending {
+    padding: 20px;
+    width: 400px;
+}
+
+.pendingComment {
+    border-top: 1px dotted rgb(200, 200, 200);
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 8px 0;
+    padding: 5px 5px 0 5px;
+}
+
+.commentCreated {
+    color: rgb(160, 160, 160);
+    float: right;
+}
+
+.pendingCommentName {
+    color: rgb(160, 160, 160);
+    margin: 0 0 3px 0;
+}
+
+.commentApprove {
+    margin: 3px 0 0;
+}
+
+/* Comment form */
+.commentForm {
+    background: rgb(50, 50, 50);
+    bottom: -211px;
+    padding: 0 10px;
+    position: fixed;
+    right: 10px;
+    width: 280px;
+    z-index: 100;
+}
+
+.commentFormHeader {
+    height: 15px;
+    padding: 9px 0;
+}
+
+.commentFormHeader:hover {
+    cursor: pointer;
+}
+
+.commentFormHeader h1 {
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.commentFormToggle {
+    float: right;
+}
+
+.commentFormShow, .commentFormHide {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    position: relative;
+    top: 3px;
+    width: 0;
+}
+
+.commentFormShow {
+    border-bottom: 10px solid rgb(255, 255, 255);
+}
+
+.commentFormHide {
+    border-top: 10px solid rgb(255, 255, 255);
+    display: none;
+}
+
+.commentForm form {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.commentForm .field {
+    margin: 0 0 10px 0;
+}
+
+.commentForm .field p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    text-align: right;
+}
+
+.commentForm .field input, .commentForm .field textarea {
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(40, 40, 40);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+    width: 258px;
+}
+
+.commentForm .field textarea {
+    height: 70px;
+    resize: none;
+}
+
+.commentForm .field input:active, .commentForm .field input:focus, .commentForm .field textarea:active, .commentForm .field textarea:focus {
+    border: 1px solid rgb(63, 171, 218);
+    outline: none;
+}
+
+.commentForm .action {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.commentForm .action input {
+    background: rgb(63, 171, 218);
+    border: none;
+    color: rgb(255, 255, 255);
+    float: right;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.commentForm .action input:hover, .commentForm .action input:focus {
+    background: rgb(73, 181, 228);
+}
+
+.commentForm .action input:hover {
+    cursor: pointer;
+}
+
+.commentForm .action input:focus {
+    outline: none;
+}
+
+.commentCounter {
+    color: rgb(160, 160, 160);
+    float: right;
+    font-size: 14px;
+    margin: 0 20px 0 0;
+    position: relative;
+    top: 5px;
+}
+
+/* Comment confirm */
+.commentConfirm {
+    padding: 10px 0;
+}
+
+.commentConfirm p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 14px 0;
+}

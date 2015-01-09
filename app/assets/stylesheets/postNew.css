@@ -1,0 +1,121 @@
+.postControlPanel {
+    float: right;
+    width: 200px;
+}
+
+.postControlPanel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 200px;
+}
+
+.postControlPanel li {
+    margin: 0 0 8px 0;
+    text-align: right;
+}
+
+.postControlPanel a {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.postControlPanel input {
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(40, 40, 40);
+    font-size: 12px;
+    margin: 3px 0 0 0;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.postControlPanel input:focus {
+    border: 1px solid rgb(120, 120, 120);
+}
+
+#postControlPanelColor {
+    width: 100%;
+}
+
+#postControlPanelColor input {
+    width: 33%;
+}
+
+.postForm {
+    float: left;
+    width: 740px;
+}
+
+.postFormHeader, .postFormContent {
+    background: rgb(255, 255, 255);
+    padding: 26px 0;
+}
+
+.postFormHeader {
+    border-bottom: 1px dotted rgb(200, 200, 200);
+}
+
+#post_name {
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(48, 157, 207);
+    font-size: 28px;
+    margin: 0;
+    padding: 5px;
+    text-align: right;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#post_name:focus, .postFormContent textarea:focus, #post_views:focus {
+    border: 1px solid rgb(120, 120, 120);
+}
+
+.postFormContent textarea {
+    border: 1px solid rgb(200, 200, 200);
+    color: rgb(40, 40, 40);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 500px;
+    line-height: 20px;
+    margin: 0;
+    padding: 5px;
+    resize: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.postFormViews {
+    float: left;
+}
+
+#post_views {
+    border: 1px solid rgb(200, 200, 200);
+    float: none;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.postForm .action {
+    background: rgb(255, 255, 255);
+    height: 60px;
+    margin: 0 0 40px 0;
+}
+
+.postForm .action input {
+    float: right;
+}

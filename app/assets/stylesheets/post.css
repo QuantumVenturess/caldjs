@@ -1,0 +1,244 @@
+/* Blog Index & Post Index */
+.postSingle {
+    float: right;
+    width: 800px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -khtml-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.postSingle nav {
+    border-right: 1px dotted rgb(200, 200, 200);
+    margin: 0 0 0 -127px;
+    padding: 0 15px 0 0;
+    position: absolute;
+    text-align: right;
+}
+
+.postSingleDay, .postSingleDate {
+    padding: 10px 0;
+}
+
+.postSingleDay {
+    color: rgb(40, 40, 40);
+    font-size: 20px;
+}
+
+.postSingleDate {
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    border-top: 1px dotted rgb(200, 200, 200);
+}
+
+.postHeader {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px dotted rgb(200, 200, 200);
+    padding: 26px 30px;
+}
+
+.postHeader div {
+    float: left;
+    margin-left: -25px;
+    margin-top: -20px;
+}
+
+.postHeader div p {
+    color: rgb(120, 120, 120);
+    font-size: 12px;
+}
+
+.postSingle h1 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 0;
+    text-align: right;
+}
+
+.postSingle section {
+    background: rgb(255, 255, 255);
+    padding: 20px 30px;
+}
+
+.blogPosts .postSingle section {
+    max-height: 500px;
+    padding: 20px 30px 0 30px;
+    overflow: hidden;
+}
+
+.postSingle section img {
+    max-width: 740px;
+}
+
+.postSingle section p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.articleSpacer {
+    background: rgb(255, 255, 255);
+    height: 60px;
+}
+
+.articleSpacer a {
+    float: right;
+    font-size: 14px;
+    padding: 22px 30px;
+    -webkit-transition: all .3s linear;
+    -khtml-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.postShadow {
+    background: url('/assets/post_shadow.png');
+    float: right;
+    height: 10px;
+    margin: 0 0 40px 0;
+    width: 800px;
+}
+
+.blogPosts .pagination {
+    float: right;
+    width: 800px;
+}
+
+/* Post Show */
+.blogWaypoint {
+    height: 0;
+    position: absolute;
+}
+
+.blogTopWay {
+    top: 150px;
+}
+
+.blogMidWay {
+    top: 175px;
+}
+
+.blogBotWay {
+    top: 200px;
+}
+
+.postShow nav.fixed {
+    position: fixed;
+    top: 50px;
+}
+
+.socialShare {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+    width: 96px;
+}
+
+.postTwitter {
+    float: right;
+    font-size: 0;
+    height: 20px;
+    margin: 0 0 10px 0;
+    width: 59px;
+}
+
+.postTwitter div {
+    background: url('/assets/tweet.jpg');
+    height: 20px;
+    width: 59px;
+}
+
+.postTwitter div:hover {
+    background-position: -59px 0;
+}
+
+.postTwitter div:active {
+    background-position: -118px 0;
+}
+
+.postFacebook {
+    float: right;
+    height: 20px;
+    overflow: hidden;
+    width: 44px;
+}
+
+.postComments {
+    background: rgb(255, 255, 255);
+    border-top: 1px dotted rgb(200, 200, 200);
+    padding: 20px 30px;
+}
+
+.publishDelete {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 40px;
+}
+
+.publishDelete li {
+    text-align: right;
+}
+
+.publishDelete a {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.postArrows {
+    float: right;
+    margin-top: -15px;
+    padding: 0 200px;
+    width: 400px;
+}
+
+.postArrows a {
+    color: rgb(120, 120, 120);
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+    width: 90px;
+    -webkit-transition: .2s all linear;
+    -khtml-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -ms-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+}
+
+.postArrows a:hover {
+    opacity: 0.8;
+}
+
+.postArrows img {
+    height: 31px;
+    width: 19px;
+}
+
+.prevPost {
+    float: left;
+}
+
+.prevPost img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.nextPost {
+    float: right;
+    text-align: right;
+}
+
+.nextPost img {
+    float: right;
+    margin: 0 0 0 10px;
+}

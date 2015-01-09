@@ -1,0 +1,34 @@
+<div class="contact contentPad">
+    <section>
+        <p>If you have questions or would like us to perform at your event, please contact Henry directly by:</p>
+    </section>
+    <div class="contactForm">
+        <h1>Message</h1>
+        <%= form_for @comment do |f| %>
+            <%= render 'shared/error_messages', object: f.object %>
+            <div class="field">
+                <%= f.text_field :email, autocomplete: :off, placeholder: 'Email Address' %>
+            </div>
+            <div class="field">
+                <%= f.text_area :content, placeholder: 'Message' %>
+            </div>
+            <div class="action">
+                <%= f.submit 'Submit' %>
+            </div>
+        <% end %>
+    </div>
+    <div class="contactInfo">
+        <section>
+            <h1>Phone</h1>
+            <p>(510) 225-5532</p>
+        </section>
+        <section>
+            <h1>Email</h1>
+            <p><%= mail_to 'caldjs@gmail.com', 'caldjs[at]gmail.com', subject: 'Contacting Cal Djs' %></p>
+        </section>
+    </div>
+    <div class="clear"></div>
+    <div class="contactHelp">
+        <p>Helpful things to include: date/time of event, venue name/location, approximate number of guests, whether you need a sound system, and where you heard of us.</p>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="home">
+    <div class="homeImages">
+        <div class="homeImagesContainer" id="cycle">
+            <%= image_tag '/assets/home1.jpg' %>
+            <%= image_tag '/assets/home2.jpg' %>
+            <%= image_tag '/assets/home3.jpg' %>
+            <%= image_tag '/assets/home4.jpg' %>
+        </div>
+    </div>
+    <div class="what">
+        <h1>What is Cal Djs?</h1>
+        <%= what %>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="how">
+    <h1>How to Book</h1>
+    <ul>
+        <li>
+            <div class="group">
+                <h2>Contact</h2>
+                <div class="groupImage">
+                    <%= link_to('#', class: 'contactUs') do %>
+                        <%= image_tag '/assets/contact.png' %>
+                    <% end %>
+                </div>
+                <p>Get in touch with us. You can contact Cal Djs <%= link_to 'here', '#', class: 'contactUs' %>, by email, or by phone. We will make sure you receive a prompt response.</p>
+            </div>
+        </li>
+        <li class="groupArrow">
+            <div><div></div></div>
+        </li>
+        <li>
+            <div class="group">
+                <h2>Book</h2>
+                <div class="groupImage">
+                    <%= image_tag '/assets/book.png' %>
+                </div>
+                <p>Reserve your day. Once we get in touch, you will book the day you want us to spin at your event.</p>
+            </div>
+        </li>
+        <li class="groupArrow">
+            <div><div></div></div>
+        </li>
+        <li>
+            <div class="group">
+                <h2>Relax</h2>
+                <div class="groupImage">
+                    <%= image_tag '/assets/relax.png' %>
+                </div>
+                <p>Kick back, relax, and enjoy the show. We will take care of everything and keep the party jumping all day and night.</p>
+            </div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+</div>
+<div class="commentForm">
+    <%= render 'comments/comment_form' %>
+</div>

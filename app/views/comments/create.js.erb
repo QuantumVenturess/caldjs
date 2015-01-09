@@ -1,0 +1,5 @@
+$('.commentForm').animate({ bottom: '-=244' }, 500, function() {
+    $(this).html("<%= escape_javascript(render(partial: 'comments/comment_confirm')) %>");
+    $(this).animate({ bottom: '+=244' }, 500);
+    $('.commentFormHide').show();
+})

@@ -1,0 +1,45 @@
+<div class="header">
+	<header class="topHeader">
+		<%= link_to(root_path, class: 'logo') do %>
+			<%= image_tag '/assets/logo.png' %>
+		<% end %>
+		<nav>
+			<ul>
+				<li><%= link_to 'About', about_path %></li>
+				<li><%= link_to 'Blog', blog_path %></li>
+				<li><%= link_to 'Contact', contact_path %></li>
+				<% if signed_in? %>
+					<li>
+						<%= link_to "#{current_user.first_name}", edit_user_path(current_user), class: 'account' %>
+					</li>
+				<% end %>
+			</ul>
+			<nav id="menu">
+				<ul>
+					<li><%= link_to 'New Post', new_post_path %></li>
+					<li><%= link_to 'Posts', posts_path %></li>
+					<li><%= link_to 'Upload Photo', upload_path %></li>
+					<li><%= link_to 'Photos', photos_path %></li>
+					<li><%= link_to 'Comments', comments_path %></li>
+					<li><%= link_to 'Sign Out', signout_path %></li>
+				</ul>
+			</nav>
+		</nav>
+	</header>
+</div>
+<% flash.each do |key, value| %>
+	<div class="flash <%= key %>">
+		<%= link_to image_tag('/assets/close.png'), '#', class: 'closeFlash', title: 'Close' %>
+		<p><%= value %></p>
+	</div>
+<% end %>
+<header class="botHeader">
+	<%= link_to root_path do %>
+		<%= image_tag '/assets/cal_djs.png', class: 'nameLogo' %>
+	<% end %>
+	<div>
+		<h1>Hear the sound</h1>
+		<h1>Feel the music</h1>
+	</div>
+	<div class="clear"></div>
+</header>

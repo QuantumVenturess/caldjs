@@ -1,0 +1,7 @@
+var $photos = $('<%= j render partial: "photos/photo", collection: @photos %>');
+$('.grid').append($photos).masonry('appended', $photos);
+<% if @photos.total_pages == @photos.current_page %>
+    $('.endlessPagination').remove();
+<% else %>
+    $('.loading').replaceWith('<%= j render "endless_pagination" %>');
+<% end %>

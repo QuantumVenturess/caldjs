@@ -1,0 +1,27 @@
+.about {
+    h1 {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 42px;
+        margin: 0 0 10px 0;
+    }
+    section {
+        margin: 0 0 40px 0;
+        ol {
+            padding: 0 0 0 40px;
+        }
+        ol, p {
+            font-size: 15px;
+            line-height: 22px;
+            margin: 0 0 15px 0
+        }
+        img {
+            float: left;
+            max-height: 300px;
+            max-width: 300px;
+        }
+        div {
+            padding: 0 0 0 320px;
+        }
+    }
+}

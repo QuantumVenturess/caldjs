@@ -1,0 +1,119 @@
+/* Top */
+.header {
+	width: 100%;
+}
+
+.header, .topHeader {
+	background: rgb(40, 40, 40);
+	height: 40px;
+}
+
+.topHeader, .botHeader {
+	width: 960px;
+}
+
+.topHeader {
+	margin: 0 auto;
+}
+
+.logo {
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 5px 0;
+	width: 30px;
+}
+
+.logo img {
+	max-height: 30px;
+	max-width: 30px;
+}
+
+.topHeader nav {
+	float: right;
+}
+
+.topHeader nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.topHeader nav li {
+	display: inline-block;
+	float: left;
+}
+
+.topHeader nav li a {
+	display: block;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 13px 20px;
+	-webkit-transition: all .1s linear;
+	-khtml-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.topHeader nav li a:hover {
+	background: rgb(48, 157, 207);
+	color: rgb(255, 255, 255);
+}
+
+/* Menu */
+#menu {
+	display: none;
+	position: relative;
+}
+
+#menu ul {
+	background: rgb(50, 50, 50);
+	position: absolute;
+	right: 0;
+	top: 40px;
+	width: 160px;
+}
+
+#menu li {
+	display: block;
+	float: none;
+}
+
+#menu a {
+	color: rgb(160, 160, 160);
+}
+
+#menu a:hover {
+	background: rgb(80, 80, 80);
+	color: rgb(255, 255, 255);
+}
+
+/* Bottom */
+.botHeader {
+	height: 100px;
+	margin: 20px auto 40px auto;
+}
+
+.nameLogo {
+	margin: 0 0 0 10px;
+	max-height: 100px;
+	vertical-align: bottom;
+}
+
+.botHeader div {
+	float: right;
+	margin: 0 10px 0 0;
+}
+
+.botHeader h1 {
+	font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	margin: 0;
+	text-align: right;
+}
+
+.botHeader h1:first-child {
+	margin: 0 0 10px 0;
+}

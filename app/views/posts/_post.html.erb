@@ -1,0 +1,48 @@
+ <article class="postSingle">
+    <header>
+        <nav>
+            <p class="postSingleDay">
+                <% if post.published_date %>
+                    <%= post.published_date.strftime("%A") %>
+                <% else %>
+                    -
+                <% end %>
+            </p>
+            <p class="postSingleDate">
+                <% if post.published_date %>
+                    <%= post.published_date.strftime("%b %d, %Y") %>
+                <% else %>
+                    Unpublished
+                <% end %>
+            </p>
+            <ul class="socialShare">
+                <li class="postTwitter">
+                    <%= link_to("#{root_url}#{post_path(post)}", id: "tweet_#{post.id}", class: "twitterShare", name: "#{CGI.escape(post.name)}", title: "Twitter") do %>
+                        <div></div>
+                    <% end %>
+                </li>
+                <li class="postFacebook">
+                    <fb:like href="http://blog.flashingdeals.com<%= post_path(post) %>" layout="button_count" send="false" show_faces="false">
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </nav>
+        <div class="postHeader">
+            <% if signed_in? %>
+                <% if current_user.admin? %>
+                    <div>
+                        <p><%= pluralize(post.views, 'view') %></p>
+                    </div>
+                <% end %>
+            <% end %>
+            <h1><%= link_to post.name, post %></h1>
+        </div>
+    </header>
+    <section>
+        <%= to_html(post.content.html_safe) %>
+    </section>
+    <div class="articleSpacer">
+        <%= link_to "Read More...", post %>
+    </div>
+</article>
+<div class="postShadow"></div>

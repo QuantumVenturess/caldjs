@@ -1,0 +1,13 @@
+<%= form_tag upload_photo_path, { multipart: true } do %>
+    <div class="field">
+        <p>Name</p>
+        <%= text_field_tag 'upload[name]' %>
+    </div>
+    <div class="field">
+        <%= file_field_tag 'upload[file]' %>
+    </div>
+    <div class="action">
+        <%= submit_tag 'Upload' %>
+        <%= link_to 'Photos', photos_path %>
+    </div>
+<% end %>

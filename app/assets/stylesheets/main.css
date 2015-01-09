@@ -1,0 +1,84 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: rgb(255, 255, 255);
+	color: rgb(40, 40, 40);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 0 0 80px 0;
+	width: 960px;
+}
+
+.contentPad {
+	padding: 0 10px;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: rgb(48, 157, 207);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.clear {
+	clear: both;
+	font-size: 1px;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.red {
+	color: rgb(255, 26, 0);
+}
+
+.errorExplanation ul {
+	padding: 0 0 0 20px;
+	margin: 0 0 20px 0;
+}
+
+.errorExplanation ul li {
+	color: rgb(255, 25, 0);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url('/assets/quicksand_book.ttf'),
+	     url('/assets/quicksand_book.eot');
+}
+
+@font-face {
+	font-family: Opensans;
+	src: url('/assets/opensans.ttf'),
+		 url('/assets/opensans.eot');
+}

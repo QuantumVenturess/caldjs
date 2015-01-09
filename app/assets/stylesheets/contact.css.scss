@@ -1,0 +1,39 @@
+.contact {
+    h1 {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 42px;
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
+    }
+    section {
+        margin: 0 0 20px 0;
+        p {
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+    .contactForm {
+        float: left;
+        form {
+            margin: 10px 0 0 0;
+            .action {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    .contactInfo {
+        float: right;
+        text-align: right;
+    }
+    .contactHelp {
+        margin: 40px 0 0 0;
+        text-align: center;
+        p {
+            color: rgb(120, 120, 120);
+            font-size: 13px;
+        }
+    }
+}
